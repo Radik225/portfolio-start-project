@@ -43,7 +43,7 @@ export const IconCSS = (props: IconPropsType) => {
 
 export const IconReact = (props: IconPropsType) => {
     return (
-        <StyledIconFrontend width= {props.width || ""}  height={props.height || "113"} viewBox={props.viewBox || "0 0 23 20"} fill="none" xmlns="http://www.w3.org/2000/svg">
+        <StyledIconFrontend width= {props.width || "105"}  height={props.height || "113"} viewBox={props.viewBox || "0 0 24 18"} fill="none" xmlns="http://www.w3.org/2000/svg">
             <use xlinkHref={`${IconsSprite}#${props.iconId}`} />
         </StyledIconFrontend>
     )
@@ -60,6 +60,14 @@ export const IconHTML = (props: IconPropsType) => {
 export const IconJS = (props: IconPropsType) => {
     return (
         <StyledIconFrontend width= {props.width || "100"}  height={props.height || "113"} viewBox={props.viewBox || "0 0 24 20"} fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlinkHref={`${IconsSprite}#${props.iconId}`} />
+        </StyledIconFrontend>
+    )
+}
+
+export const IconBackEnd = (props: IconPropsType) => {
+    return (
+        <StyledIconFrontend width= {props.width || "90"}  height={props.height || "113"} viewBox={props.viewBox || "0 0 80 60"} fill="none" xmlns="http://www.w3.org/2000/svg">
             <use xlinkHref={`${IconsSprite}#${props.iconId}`} />
         </StyledIconFrontend>
     )

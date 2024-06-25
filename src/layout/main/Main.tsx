@@ -3,6 +3,7 @@ import { BackgroundImageHeroPage } from "../../components/backgroundImageHeroPag
 import styled from "styled-components";
 import photo from "../../assets/img/i_m.webp";
 import {
+  IconBackEnd,
   IconCSS,
   IconFrontend,
   IconHTML,
@@ -10,8 +11,9 @@ import {
   IconReact,
   IconTypeScript,
 } from "../../components/itemIcons/ItemIcons";
+import { AboutMePage } from "../../components/aboutMe/AboutMe";
 
-const StyledHeroPage = styled.div`
+const StyledHeroPage = styled.section`
   width: 1440px;
   display: flex;
   height: 716px;
@@ -77,25 +79,27 @@ const StyledItem = styled.div`
   justify-content: center;
   background-color: #2a2a2a;
   border-radius: 25px;
-  box-shadow: -1px 11px 12px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 11px 12px -4px rgba(0, 0, 0, 0.55);
 `;
 
 const StyledNameItem = styled.h3`
   font-size: 24px;
   margin: 25px 0px 0px 0px;
   font-family: Arodora Pro, serif;
+  font-weight: 300;
   color: #fff;
 `;
 
 const StyledSkills = styled.div`
-  width: 1440px;
+  width: 1240px;
   background-color: #414141;
   display: flex;
   flex-wrap: wrap;
-  gap: 73px;
+  gap: 40px;
   justify-content: center;
-  padding: 90px 0px;
+  padding: 130px 100px 40px 100px;
 `;
+
 
 export const Main = () => {
   return (
@@ -142,10 +146,11 @@ export const Main = () => {
           <StyledNameItem>JavaScript</StyledNameItem>
         </StyledItem>
         <StyledItem>
-          <IconCSS iconId={"cssIcon"} />
-          <StyledNameItem>CSS</StyledNameItem>
+          <IconBackEnd iconId={"BackEnd"} />
+          <StyledNameItem>Backend</StyledNameItem>
         </StyledItem>
       </StyledSkills>
+      <AboutMePage/>
     </main>
   );
 };
