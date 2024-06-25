@@ -12,6 +12,7 @@ import {
   IconTypeScript,
 } from "../../components/itemIcons/ItemIcons";
 import { AboutMePage } from "../../components/aboutMe/AboutMe";
+import { PortfolioPage } from "../../components/portfolioPage/PortfolioPage";
 
 const StyledHeroPage = styled.section`
   width: 1440px;
@@ -90,7 +91,7 @@ const StyledNameItem = styled.h3`
   color: #fff;
 `;
 
-const StyledSkills = styled.div`
+const StyledSkills = styled.section`
   width: 1240px;
   background-color: #414141;
   display: flex;
@@ -99,7 +100,6 @@ const StyledSkills = styled.div`
   justify-content: center;
   padding: 130px 100px 40px 100px;
 `;
-
 
 export const Main = () => {
   return (
@@ -150,7 +150,8 @@ export const Main = () => {
           <StyledNameItem>Backend</StyledNameItem>
         </StyledItem>
       </StyledSkills>
-      <AboutMePage/>
+      <AboutMePage />
+      <PortfolioPage />
     </main>
   );
 };
