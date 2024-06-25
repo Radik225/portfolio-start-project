@@ -52,8 +52,8 @@ const StyledSection = styled.section`
     width: 100%; 
     position: absolute;
     z-index: 0;
-    left: 0px;
-    top: 258px;
+    left: 27px;
+    top: 196px;
 `;
 
 const StyledTitleAboutMe = styled.h3`
@@ -62,9 +62,7 @@ const StyledTitleAboutMe = styled.h3`
   color: #fff;
   font-weight: 400;
   z-index: 1;
-  transform: translateY(50%);
-  padding-top: 135px;
-  padding-right: 130px;
+  transform: translate3d(-60px,95px,50px);
   &::before {
     content: "";
     background-image: url(${photo2});
@@ -75,7 +73,7 @@ const StyledTitleAboutMe = styled.h3`
     position: absolute;
     z-index: 1000;
     left: -350px;
-    top: 120px;
+    top: 0px;
     border: 25px solid #2c2c2c;
     border-radius: 10px;
     outline: 5px solid #606060;
@@ -92,7 +90,7 @@ const StyledTitleAboutMe = styled.h3`
     position: absolute;
     z-index: 1000;
     left: 360px;
-    top: 350px;
+    top: 220px;
     border: 25px solid #2c2c2c;
     border-radius: 10px;
     outline: 5px solid #606060;
